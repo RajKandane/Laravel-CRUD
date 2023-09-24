@@ -1,0 +1,395 @@
+    /* Apply basic styles to the body */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: rgb(15 23 42);
+        padding: 0;
+    }
+    
+    /* Apply white text color to all text elements */
+    body, h1, label, textarea, .btn {
+        color: #fff;
+        
+    }
+
+    /* Style the page container */
+    .container {
+        max-width: 800px;
+        margin: 0 auto; /* Center horizontally */
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    }
+
+    /* Define the pulse animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Apply enhanced styles to the submit button */
+    .btn-submit,
+    .btn-delete,
+    .btn-edit,
+    .btn-create,
+    .btn-back {
+        background: linear-gradient(90deg, #4ca5ff, #b573f8);
+        color: #fff; /* Set text color to white or another contrasting color */
+        border: none;
+        border-radius: 50px; /* Make the button more round */
+        padding: 12px 24px; /* Adjust padding for better appearance */
+        font-size: 16px; /* Increase font size for better readability */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 auto; /* Center horizontally */
+        text-decoration: none; /* Remove underline */
+    }
+
+    /* Add hover effect */
+    .btn-submit:hover,
+    .btn-delete:hover,
+    .btn-edit:hover,
+    .btn-create:hover
+    .btn-back:hover {
+        background: linear-gradient(90deg, #b573f8, #4ca5ff);
+        transform: scale(1.05); /* Slightly increase size on hover */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add a stronger shadow */
+    }
+
+    /* Add focus effect */
+    .btn-submit:focus,
+    .btn-delete:focus,
+    .btn-edit:focus,
+    .btn-create:focus
+    .btn-back:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Center the "Create a Product" button */
+    .center-button {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+
+
+    /* Style headings */
+    h1 {
+        font-size: 24px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 12px 6px; /* Adjust the top and bottom padding to increase the height */
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 24px; /* Increased font size to 24px */
+        max-width: 300px; /* Set a maximum width (adjust as needed) */
+        margin: 0 auto; /* Center the textarea horizontally */
+        display: block; /* Ensure it's a block-level element for margin auto to work */
+    }
+    
+
+    /* Style tables */
+    table {
+        width: 50%;
+        margin: 0 auto; /* Center the table horizontally */
+        border-collapse: collapse;
+        margin-top: 30px;
+    }
+
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        padding: 7px; /* Reduced padding */
+        text-align: left;
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+        text-align: center; /* Center the text horizontally within table cells */
+    }
+
+    /* Style alerts */
+    .alert {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #e2e8f0; /* Soft gray border */
+        border-radius: 5px; /* Slightly rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    }
+
+    .alert-success {
+        background-color: #d1e7dd; /* Light green background */
+        border-color: #badbcc; /* Light green border */
+        color: #0f5132; /* Dark green text color */
+    }
+
+    .alert-danger {
+        background-color: #f8d7da; /* Light red background */
+        border-color: #f5c6cb; /* Light red border */
+        color: #721c24; /* Dark red text color */
+    }
+
+    /* Style footer */
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+        border-top: 1px solid #444;
+    }
+
+
+    /* Center the form elements within the form horizontally and add some responsive styling */
+    form {
+        text-align: center; /* Center the form elements horizontally */
+    }
+
+    /* Style form elements */
+    .form-group {
+        margin-bottom: 25px;
+        text-align: center; /* Center the text and input horizontally */
+        
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 12px;
+        max-width: 300px; /* Set a maximum width (adjust as needed) */
+        margin: 0 auto; /* Center the input horizontally */
+        display: block;
+    }
+    
+
+    /* Style the submit button */
+    .form-group input[type="submit"] {
+        margin-top: 20px; /* Add some space above the submit button */
+    }
+
+    /* Style the error container */
+/* Style the error container */
+.error-container {
+    margin-top: 20px;
+    text-align: center;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* Define slide down animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the error container */
+.error-container {
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeInDown 0.5s ease-in-out, bounce 0.5s ease-in-out 0.5s;
+}
+
+/* Define fadeInDown animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Define bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Style the error list */
+.error-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style error list items */
+.error-item {
+    background-color: #f8d7da; /* Light red background */
+    border-color: #f5c6cb; /* Light red border */
+    color: #721c24; /* Dark red text color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transform-origin: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Add a hover effect and improve visibility */
+.error-item:hover {
+    transform: scale(1);
+    opacity: 0.9;
+    animation: pulse 0.5s infinite;
+}
+
+/* Define pulse animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Style the success notification container */
+.success-notification {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInDown 0.5s ease-in-out, bounce 0.5s ease-in-out 0.5s;
+}
+
+/* Style the success message */
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb; /* Light green border */
+    color: #155724; /* Dark green text color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transform-origin: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Add a hover effect and improve visibility */
+.success-message:hover {
+    transform: scale(1);
+    opacity: 0.9;
+    animation: pulse 0.5s infinite;
+}
+
+
+/* Style the success notification container */
+.success-notification {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInDown 0.5s ease-in-out, bounce 0.5s ease-in-out 0.5s;
+}
+
+/* Style the success message */
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb; /* Light green border */
+    color: #155724; /* Dark green text color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transform-origin: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Add a hover effect and improve visibility */
+.success-message:hover {
+    transform: scale(1);
+    opacity: 0.9;
+    animation: pulse 0.5s infinite;
+}
+
+    
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        padding: 4px; /* Reduced padding */
+        font-size: 12px; /* Reduced font size */
+    }
+    .btn {
+        padding: 4px 8px; /* Reduced padding */
+        font-size: 12px; /* Reduced font size */
+    }
+    /* Reduce space between table columns */
+    th:not(:first-child),
+    td:not(:first-child) {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    /* Limit table width on smaller screens */
+    table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
